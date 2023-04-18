@@ -18,5 +18,3 @@ urlpatterns = [
     path('<slug:name>/update/', ufp, name='update_for_post'),
     path('<slug:name>/delete/', dp, name='delete_post'),
 ]
-
-
