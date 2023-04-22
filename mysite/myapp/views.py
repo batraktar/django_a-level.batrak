@@ -6,6 +6,22 @@ def blogs(request):
     return render(request, 'index.html')
 
 
+def register(request):
+    return render(request, 'registration.html')
+
+
+def login(request):
+    return render(request, 'log-in.html')
+
+
+def blog_post(request, name):
+    return render(request, 'details_blogs.html')
+
+
+def create_post(request):
+    return render(request, 'new_post.html')
+
+
 def about(request):
     return HttpResponse('about')
 
@@ -30,17 +46,5 @@ def change_password(request):
     return HttpResponse('Change Password')
 
 
-def register(request):
-    return HttpResponse('register')
-
-
-def login(request):
-    return HttpResponse('log in')
-
-
 def logout(request):
     return HttpResponse('log out')
-
-
-def blog_post(request, name):
-    return HttpResponse(f'Your post {name}')

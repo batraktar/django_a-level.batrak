@@ -1,13 +1,14 @@
 from django.contrib import admin
 from django.urls import path
-from myapp.views import blogs, about, blog_post, cip, ufp, dp, change_password, login, profile, register, logout
+from myapp.views import blogs, about, blog_post, cip, ufp, dp, change_password, login, profile, register, logout, create_post
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', blogs, name='blogs'),
     path('blogs/', blogs, name='blogs'),
     path('about/', about, name='about'),
-    path('', blogs, name='blogs'),
+    path('create_post/', create_post, name='create'),
     path('login/', login, name='login'),
     path('logout/', logout, name='logout'),
     path('profile/<str:username>/', profile, name='profile'),
