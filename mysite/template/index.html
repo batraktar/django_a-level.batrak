@@ -1,16 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Головна сторінка</title>
-</head>
-<body>
-<div>
-    <a href="{% url 'login' %}">Вхід</a>
-    <a href="{% url 'register' %}">Реєстрація</a>
-    <a href="{% url 'blogs' %}">Головна сторінка(список блогів)</a>
-    <a href="{% url 'blog_post' 12 %}">Сторінка з деталями блогу</a>
-    <a href="{% url 'create' %}">Сторінка створення нового посту</a>
-</div>
-</body>
-</html>
+{% extends 'base.html' %}
